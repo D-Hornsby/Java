@@ -81,7 +81,7 @@ public class M3W1HW2 {
 
 
 //Write a Java program to test an array list is empty or not...Boolean
-		        ArrayList myArrayList = new ArrayList();
+		        ArrayList<String> myArrayList = new ArrayList<String>();
 				
 		           if (myArrayList.isEmpty())
 		            System.out.println("ArrayList empty");
