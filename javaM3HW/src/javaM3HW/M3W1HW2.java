@@ -95,7 +95,7 @@ public class M3W1HW2 {
 
 //Write a Java program to replace the second element of a ArrayList with the specified element.
 		           
-		           List<String> phobia = new ArrayList<String>();
+		           ArrayList<String> phobia = new ArrayList<String>();
 				           phobia.add("Xylophobia");
 				           phobia.add("Triskaidekaphobia");
 				           phobia.add("Oikophobia") ;
@@ -103,10 +103,15 @@ public class M3W1HW2 {
 		           System.out.println("List before add" + phobia);  //list index is 3
 		            
 		           //Add element at 0 index
-		           phobia.add(1, "Sesquipedalophobia");
+		           //this is not working like i thought it would
+		           //I targeted index 1 but its not replacing its "adding" it at index 1
+		          // phobia.add(1, "Sesquipedalophobia");
+		           
+		           String phobia1 = "Sesquipedalophobia";
+		           phobia.set(1, phobia1); //replacing with new phobia
 		            
 		           System.out.println("List after add" + phobia);  //add second element at index 2 list size is 4
-		           
+		          // System.out.println(phobia.set(1, "Sesquipedalophobia"));
 		           //prints
 		           	//List before add[Xylophobia, Triskaidekaphobia, Oikophobia]
 		            //List after add[Xylophobia, Sesquipedalophobia, Triskaidekaphobia, Oikophobia]
